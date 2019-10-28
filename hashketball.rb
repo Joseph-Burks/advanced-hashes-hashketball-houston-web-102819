@@ -210,7 +210,6 @@ def player_with_most(stat)
       end
     end
   end
-
   player_name
 end
 
@@ -224,16 +223,4 @@ end
 
 def long_name_steals_a_ton?
   player_with_most(:steals) == player_with_most(:player_name)
-end
-
-def winning_team
-  score = { 'Brooklyn Nets' => 0, 'Charlotte Hornets' => 0 }
-
-  game_hash.each do |team, data|
-    game_data[:players].each do |player|
-      scores[data[:team_name]] += iterate_through_players_for(player[:player_name], :points)
-    end
-  end
-
-  scores.max_by { |_k, v| v }.first
 end
