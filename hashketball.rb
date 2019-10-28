@@ -225,3 +225,5 @@ end
 def long_name_steals_a_ton?
   player_with_most(:steals) == player_with_most(:player_name)
 end
+
+def winning_team
