@@ -214,6 +214,6 @@ def player_with_most(stat)
   player_name
 end
 
-def most_points_scored
+def most_points_scored(points)
   player_with_most[:points]
 end
