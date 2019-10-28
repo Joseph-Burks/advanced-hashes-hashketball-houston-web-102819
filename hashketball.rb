@@ -219,4 +219,5 @@ def most_points_scored
 end
 
 def player_with_longest_name
-  player_with_most(:player)
+  player_with_most(:player_name)
+end
